@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.6.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>cn.sonoframework.cornerstone</groupId>
+	<artifactId>core</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>core</name>
+	<description>基石项目主目录</description>
+    <packaging>pom</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<source.encoding>UTF-8</source.encoding>
+		<java.version>1.8</java.version>
+		<springboot.version>1.5.8.RELEASE</springboot.version>
+		<ice.version>3.7.2</ice.version>
+		<druid.version>1.1.17</druid.version>
+		<mysql_connector_java.version>8.0.16</mysql_connector_java.version>
+		<mybatis_spring_boot_starter.version>2.0.1</mybatis_spring_boot_starter.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
